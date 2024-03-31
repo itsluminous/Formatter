@@ -38,6 +38,16 @@ services:
     networks:
       - fmt_network
 
+  parser:
+    container_name: parser
+    build: 
+      context: ParserService
+      dockerfile: Dockerfile
+    environment:
+      BUILD_CONFIGURATION: "Release"
+    networks:
+      - fmt_network
+
 networks:
   fmt_network:
     driver: bridge

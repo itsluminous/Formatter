@@ -1,0 +1,10 @@
+**/.git
+**/.vs
+**/.vscode
+**/.idea
+**/bin
+**/obj
+**/obj/
+**/out
+**/*.pdb
+**/.DS_Store
