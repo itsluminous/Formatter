@@ -1,0 +1,7 @@
+###
+@ListenerService_HostAddress = http://localhost:5117
+
+POST http://{{ListenerService_HostAddress}}/api/Message/send
+Content-Type: application/json
+
+"some text with one number and two values"
