@@ -4,6 +4,7 @@
 2. ``cd fmt-frontend``
 3. ``ng generate component home``
 4. ``ng generate component about``
+5. ``ng add @angular/material``
 
 ## Development server
 

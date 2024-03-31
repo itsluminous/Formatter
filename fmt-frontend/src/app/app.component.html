@@ -1,11 +1,8 @@
-<!-- <nav>
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/about" routerLinkActive="active">About</a>
-</nav>
-<router-outlet></router-outlet> -->
-
-<h1>Formatter</h1>
-<a routerLink="">Home</a>
-<a routerLink="about" class="cursor-pointer">About</a>
-
-<router-outlet></router-outlet> 
+<mat-toolbar color="primary">
+  <span class="navbar-title">Formatter</span>
+  <nav mat-tab-nav-bar>
+    <a mat-tab-link routerLink="" class="navbar-link" routerLinkActive="active">Home</a>
+    <a mat-tab-link routerLink="about" class="navbar-link" routerLinkActive="active">About</a>
+  </nav>
+</mat-toolbar>
+<router-outlet></router-outlet>

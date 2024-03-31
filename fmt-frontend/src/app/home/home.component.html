@@ -1,12 +1,13 @@
-<section>
-    <h2>Send</h2>
-    <p>Status: {{ sendStatus }}</p>
-    <input [(ngModel)]="userInput" placeholder="Type something...">
-    <button (click)="sendData()">Send</button>
-  </section>
-  
-  <section>
-    <h2>Receive</h2>
-    <p>Status: {{ receiveStatus }}</p>
-    <input [readonly]="true" [value]="receivedData">
-  </section>
+<div class="container">
+  <div class="textbox">
+    <h2 class="title">Send</h2>
+    <p class="subtitle">Status: {{ sendStatus }}</p>
+    <textarea class="editable-textbox" [(ngModel)]="userInput" placeholder="Type something..."></textarea>
+  </div>
+  <div class="textbox">
+    <h2 class="title">Receive</h2>
+    <p class="subtitle">Status: {{ receiveStatus }}</p>
+    <textarea class="readonly-textbox" [readonly]="true">{{ receivedData }}</textarea>
+  </div>
+</div>
+ 
